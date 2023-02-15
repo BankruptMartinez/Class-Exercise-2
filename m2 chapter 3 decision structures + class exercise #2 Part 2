@@ -1,0 +1,47 @@
+#Carlos Martinez 
+
+#Challege Exercise #1
+from socket import PACKET_LOOPBACK
+from struct import pack
+
+
+pocket_number = int(input('Chose a pocket '))
+if pocket_number >=0 and pocket_number <=36:
+    if pocket_number == 0:
+        pocket_color = 'green'
+    elif pocket_number >=1 and pocket_number <10:
+        if pocket_number %2 == 0:
+            pocket_color = 'black'
+        else:
+           pocket_color = 'red'
+    elif pocket_number >=11 and pocket_number <18:
+        if pocket_number %2 == 0:
+            pocket_color = 'red'
+        else:
+           pocket_color = 'black'
+    elif pocket_number >=19 and pocket_number <28:
+        if pocket_number %2 == 0:
+            pocket_color = 'black'
+        else:
+           pocket_number = 'red'
+    elif pocket_number >=29 and pocket_number <36:
+        if pocket_number %2 == 0:
+            pocket_color = 'red'
+        else:
+           pocket_color = 'black'
+    print ("User pocket color =", pocket_color)
+else:
+    print ("Error. Number must be between 0 and 36.\nRerun program and try again.")
+
+
+#Challege Exercise #2 
+package_weight = int(input("What is the weight of your package? : "))
+if package_weight <= 2:
+    pcost = package_weight * 1.5
+elif package_weight >2 and package_weight <=6:
+    pcost = package_weight * 3
+elif package_weight >6 and package_weight <=10:
+    pcost = package_weight * 4
+elif package_weight >10:
+    pcost = package_weight * 4.75
+print ('Cost of package will be : $', pcost)

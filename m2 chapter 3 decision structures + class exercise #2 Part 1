@@ -1,0 +1,82 @@
+#Carlos Martinez 
+
+#Challege Exercise #1
+t1 = int(input('enter test 1 score '))
+t2 = int(input('enter test 2 score '))
+t3 = int(input('enter test 3 score '))
+
+average = (t1 + t2 + t3) / 3
+
+print ('the average score is ', round(average))
+
+if average >=90 and average <=100:
+   print ('Letter grade A', round(average))
+elif average >=80 and average <=89:
+    print ('letter grade B', round(average))
+elif average >=70 and average <=79:
+    print ('letter grade C', round(average))
+elif average >=60 and average <=69:
+    print ('letter grade D', round(average))
+elif average >= 100:
+    print ('the average cannot be over 100, try again')
+else:
+    print ('letter grade F', round(average))
+    
+#Challege Exercise #2 
+temp = int(input ('Type the current temperature '))
+
+if temp < 40:
+    print ('A little cold, isn\'t it?')
+else:
+    print ('Nice weather we\'re having.')
+
+#Challege Exercise #3
+sales = int(input('What\'s your sales for the month? '))
+earning = int(sales)
+if sales >= 50000:
+  earning = (sales + 500) * 0.12
+else:
+    earning = sales * 0.12
+print ('your earning is ' + str(earning))
+
+#Challege Exercise #4
+print ("Number to Roman numeral converation")
+number = int(input('Enter a number from 1-10: '))
+
+if number == 1:
+    print ('Roman Numberal: I')
+elif number == 2:
+    print ('Roman Numberal: II')
+elif number == 3:
+    print ('Roman Numberal: III')
+elif number == 4:
+    print ('Roman Numberal: IV')
+elif number == 5:
+    print ('Roman Numberal: V')
+elif number == 6:
+    print ('Roman Numberal: VI')
+elif number == 7:
+    print ('Roman Numberal: VII')
+elif number == 8:
+    print ('Roman Numberal: VIII')
+elif number == 9:
+    print ('Roman Numberal: IX')
+elif number == 10:
+    print ('Roman Numberal: X')
+else:
+    print ('error can\'t print')
+
+#Challege Exercise #5
+test_1 = int(input("Input the score of your first test: "))
+test_2 = int(input("Input the score of your second test: "))
+exam = int(input("Input the score of final exam: "))
+test_combine = test_1 + test_2
+final_grade = test_1 + test_2 + exam
+if exam <25 or final_grade <=50:
+    print ('you failed! points:', final_grade) 
+elif final_grade >=80:
+    print ('Distinction. points:', final_grade)
+elif final_grade <=79 and final_grade >=60:
+    print ('You got credit! points:', final_grade)
+elif final_grade < 60:
+    print ('You pass. points:', final_grade
